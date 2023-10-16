@@ -1,4 +1,4 @@
-# LSP Utils &middot; [![npm version](https://img.shields.io/npm/v/@b00ste/lsp-utils.svg?style=flat)](https://www.npmjs.com/package/@b00ste/lsp-utils) [![Coverage Status](https://coveralls.io/repos/github/b00ste/lsp-utils/badge.svg?branch=main)](https://coveralls.io/github/b00ste/lsp-utils?branch=main)
+# LSP Utils &middot; [![npm version](https://img.shields.io/npm/v/@lukso/lsp-smart-contracts-utils.svg?style=flat)](https://www.npmjs.com/package/@lukso/lsp-smart-contracts-utils)
 
 This package was created with the intent to help developers to use `@lukso/lsp-smart-contracts`. Its purpose is to provide a series of helper functions for each LSP.
 
@@ -12,10 +12,10 @@ This package was created with the intent to help developers to use `@lukso/lsp-s
 
 ### npm
 
-`@b00ste/lsp-utils` is available as a [npm package](https://www.npmjs.com/package/@b00ste/lsp-utils).
+`@lukso/lsp-smart-contracts-utils` is available as a [npm package](https://www.npmjs.com/package/@lukso/lsp-smart-contracts-utils).
 
 ```bash
-npm install @b00ste/lsp-utils
+npm install @lukso/lsp-smart-contracts-utils
 ```
 
 ### cloning the repository
@@ -23,7 +23,7 @@ npm install @b00ste/lsp-utils
 Alternatively you can also clone the repository and install its dependencies to start using the smart contracts.
 
 ```bash
-$ git clone https://github.com/b00ste/lsp-utils.git
+$ git clone https://github.com/lukso-network/lsp-smart-contracts-utils.git
 $ cd ./lsp-utils
 $ npm install
 ```
@@ -37,7 +37,7 @@ You can use the utils by importing them as follow:
 #### ES6 Modules:
 
 ```javascript
-import { encodeAllowedCalls } from '@b00ste/lsp-utils/dist/lib/es6';
+import { encodeAllowedCalls } from '@lukso/lsp-smart-contracts-utils/dist/lib/es6';
 
 const allowedCalls = encodeAllowedCalls(
     allowedInteractions,
@@ -50,7 +50,7 @@ const allowedCalls = encodeAllowedCalls(
 #### CommonJS
 
 ```javascript
-cosnt { encodeAllowedCalls } = require('@b00ste/lsp-utils/dist/lib/es5');
+cosnt { encodeAllowedCalls } = require('@lukso/lsp-smart-contracts-utils/dist/lib/es5');
 
 const allowedCalls = encodeAllowedCalls(
     allowedInteractions,
@@ -59,3 +59,7 @@ const allowedCalls = encodeAllowedCalls(
     allowedFunctions
 );
 ```
+
+## Documentation
+
+For more informations check the [`docs`](https://github.com/lukso-network/lsp-smart-contracts-utils/tree/develop/docs) folder
