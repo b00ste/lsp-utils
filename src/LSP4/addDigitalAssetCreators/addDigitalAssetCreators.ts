@@ -1,6 +1,6 @@
 import ERC725 from '@erc725/erc725.js';
 import { BytesLike, Signer, Wallet, concat, toBeHex, toNumber } from 'ethers';
-import { ERC725YDataKeys, INTERFACE_IDS } from '@lukso/lsp-smart-contracts';
+import { ERC725YDataKeys } from '@lukso/lsp-smart-contracts';
 
 // types
 import { ERC725Y } from '../../typechain';
@@ -34,17 +34,7 @@ export async function addDigitalAssetCreators(
     newCreators: Issuer[],
 ): Promise<void>;
 export async function addDigitalAssetCreators(
-    digitalAsset: ERC725Y,
-    newCreators: Issuer[],
-    signer: Signer | Wallet,
-): Promise<void>;
-export async function addDigitalAssetCreators(
-    digitalAsset: BytesLike | string,
-    newCreators: Issuer[],
-    signer: Signer | Wallet,
-): Promise<void>;
-export async function addDigitalAssetCreators(
-    digitalAsset: ERC725Y | BytesLike | string,
+    digitalAsset: ERC725Y | BytesLike,
     newCreators: Issuer[],
     signer?: Signer | Wallet,
 ): Promise<void> {
@@ -52,13 +42,9 @@ export async function addDigitalAssetCreators(
         throw new Error('`newCreators` length is 0.');
     }
 
-    const digitalAssetContract: ERC725Y = getErc725yContract(digitalAsset, signer);
-
-    if (!(await digitalAssetContract.supportsInterface(INTERFACE_IDS.ERC725Y))) {
-        throw new Error(
-            "Digital asset does not support 'ERC725Y'. Cannot use `getData()` or `setData()`",
-        );
-    }
+    const digitalAssetContract: ERC725Y = signer
+        ? await getErc725yContract(digitalAsset, signer)
+        : await getErc725yContract(digitalAsset);
 
     const creatorsLengthHex = await digitalAssetContract.getData(
         ERC725YDataKeys.LSP4['LSP4Creators[]'].length,
