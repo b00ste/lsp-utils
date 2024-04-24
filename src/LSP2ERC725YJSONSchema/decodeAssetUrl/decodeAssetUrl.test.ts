@@ -1,5 +1,6 @@
 import { expect } from 'chai';
 import { decodeAssetUrl } from '../..';
+import { SUPPORTED_VERIFICATION_METHOD_HASHES } from '@erc725/erc725.js/build/main/src/constants/constants';
 
 describe('decodeAssetUrl', () => {
     it('should pass if ASSETURL has bytes length bigger than 36', () => {
@@ -7,7 +8,7 @@ describe('decodeAssetUrl', () => {
             '0x6f357c6a2a04850096912391bbb0966a624519e8f5d797df2a2c47425e892c25e00c053568747470733a2f2f676f6f676c652e636f6d2f';
 
         const expectedJsonUrl = {
-            hashFunction: '0x6f357c6a',
+            hashFunction: SUPPORTED_VERIFICATION_METHOD_HASHES.HASH_KECCAK256_UTF8,
             hash: '0x2a04850096912391bbb0966a624519e8f5d797df2a2c47425e892c25e00c0535',
             url: 'https://google.com/',
         };
@@ -20,7 +21,7 @@ describe('decodeAssetUrl', () => {
             '0x6f357c6a2a04850096912391bbb0966a624519e8f5d797df2a2c47425e892c25e00c0535';
 
         const expectedJsonUrl = {
-            hashFunction: '0x6f357c6a',
+            hashFunction: SUPPORTED_VERIFICATION_METHOD_HASHES.HASH_KECCAK256_UTF8,
             hash: '0x2a04850096912391bbb0966a624519e8f5d797df2a2c47425e892c25e00c0535',
             url: '',
         };
