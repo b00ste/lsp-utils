@@ -42,7 +42,7 @@ export const encodeAllowedERC725YDataKeys = (dataKeys: BytesLike[]) => {
             );
         }
 
-        compactedBytes += toBeHex(strippedDataKey.length, 2).substring(2) + strippedDataKey;
+        compactedBytes += toBeHex(strippedDataKey.length / 2, 2).substring(2) + strippedDataKey;
     }
 
     return compactedBytes;
