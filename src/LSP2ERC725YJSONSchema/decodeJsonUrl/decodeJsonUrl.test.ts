@@ -1,5 +1,6 @@
 import { expect } from 'chai';
 import { decodeJsonUrl } from '../..';
+import { SUPPORTED_VERIFICATION_METHOD_HASHES } from '@erc725/erc725.js/build/main/src/constants/constants';
 
 describe('decodeJsonUrl', () => {
     it('should pass if JSONURL has bytes length bigger than 36', () => {
@@ -7,7 +8,7 @@ describe('decodeJsonUrl', () => {
             '0x6f357c6a4dade694d7dd4081f46073e99ce898a9b53cf6988452904de7db5cc704a4184968747470733a2f2f676f6f676c652e636f6d2f';
 
         const expectedJsonUrl = {
-            hashFunction: '0x6f357c6a',
+            hashFunction: SUPPORTED_VERIFICATION_METHOD_HASHES.HASH_KECCAK256_UTF8,
             hash: '0x4dade694d7dd4081f46073e99ce898a9b53cf6988452904de7db5cc704a41849',
             url: 'https://google.com/',
         };
@@ -20,7 +21,7 @@ describe('decodeJsonUrl', () => {
             '0x6f357c6a4dade694d7dd4081f46073e99ce898a9b53cf6988452904de7db5cc704a41849';
 
         const expectedJsonUrl = {
-            hashFunction: '0x6f357c6a',
+            hashFunction: SUPPORTED_VERIFICATION_METHOD_HASHES.HASH_KECCAK256_UTF8,
             hash: '0x4dade694d7dd4081f46073e99ce898a9b53cf6988452904de7db5cc704a41849',
             url: '',
         };

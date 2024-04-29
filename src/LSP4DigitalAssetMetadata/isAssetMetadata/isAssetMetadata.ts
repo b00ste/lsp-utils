@@ -1,12 +1,15 @@
 import { LSP4DigitalAssetMetadataJSON } from '@lukso/lsp-smart-contracts';
 
 /**
- * Returns `true` is the passed object is an LSP4 Asset Metadata, `false` otherwise.
+ * Returns `true` if the passed object is an LSP4 Asset Metadata, `false` otherwise.
  *
  * @since v0.0.1
  * @category LSP4
  * @param object - The object that is to be checked.
  * @see https://github.com/lukso-network/LIPs/blob/main/LSPs/LSP-3-Profile-Metadata.md
+ *
+ * @returns A boolean. `true` if object is `LSP4DigitalAssetMetadataJSON`, `false` otherwise.
+ *
  * @example
  * ```ts
  * isAssetMetadata({ LSP4Metadata: { description: "", links: [], images: [], assets: [] icon: [] } }) => true
@@ -19,6 +22,7 @@ export const isAssetMetadata = (
 ): object is LSP4DigitalAssetMetadataJSON => {
     return (
         'LSP4Metadata' in object &&
+        'name' in object.LSP4Metadata &&
         'description' in object.LSP4Metadata &&
         'links' in object.LSP4Metadata &&
         'images' in object.LSP4Metadata &&
