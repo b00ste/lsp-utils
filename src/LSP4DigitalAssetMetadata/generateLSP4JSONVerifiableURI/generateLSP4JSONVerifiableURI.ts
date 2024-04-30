@@ -1,4 +1,4 @@
-import { keccak256, toUtf8Bytes, hexlify } from 'ethers';
+import { toUtf8Bytes, hexlify } from 'ethers';
 import { generateLSP4JSONWithHash } from '../generateLSP4JSONWithHash/generateLSP4JSONWithHash';
 import { Link, Attribute, Icons, Images, Assets } from '../../types/index';
 
