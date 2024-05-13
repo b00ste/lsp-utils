@@ -51,7 +51,7 @@ getProfileMetadata(ERC725Y) =>
 
 #### Defined in
 
-LSP3ProfileMetadata/getProfileMetadata/getProfileMetadata.ts:53
+[LSP3ProfileMetadata/getProfileMetadata/getProfileMetadata.ts:53](https://github.com/lukso-network/lsp-utils/blob/b49578e/src/LSP3ProfileMetadata/getProfileMetadata/getProfileMetadata.ts#L53)
 
 ---
 
@@ -59,7 +59,7 @@ LSP3ProfileMetadata/getProfileMetadata/getProfileMetadata.ts:53
 
 ▸ **isProfileMetadata**(`object`): object is LSP3ProfileMetadataJSON
 
-Returns `true` is the passed object is an LSP3 Profile Metadata, `false` otherwise.
+Returns `true` if the passed object is an LSP3 Profile Metadata, `false` otherwise.
 
 #### Parameters
 
@@ -88,4 +88,49 @@ isProfileMetadata({ description: "", links: [], name: "", tags: [] }) => false
 
 #### Defined in
 
-LSP3ProfileMetadata/isProfileMetadata/isProfileMetadata.ts:16
+[LSP3ProfileMetadata/isProfileMetadata/isProfileMetadata.ts:16](https://github.com/lukso-network/lsp-utils/blob/b49578e/src/LSP3ProfileMetadata/isProfileMetadata/isProfileMetadata.ts#L16)
+
+---
+
+### setProfileMetadata
+
+▸ **setProfileMetadata**(`erc725y`, `json`, `url`, `signer?`): `Promise`\<`void`\>
+
+Set Profile metadata.
+
+#### Parameters
+
+| Name      | Type                      | Description                                                                  |
+| :-------- | :------------------------ | :--------------------------------------------------------------------------- |
+| `erc725y` | `BytesLike` \| `ERC725Y`  | The address of the Profile to set the metadata for.                          |
+| `json`    | `LSP3ProfileMetadataJSON` | The JSON file content hosted at `url`.                                       |
+| `url`     | `string`                  | The URL where the JSON file is hosted.                                       |
+| `signer?` | `Signer` \| `Wallet`      | The ethers `Signer`, address that is allowed to modify the Profile metadata. |
+
+#### Returns
+
+`Promise`\<`void`\>
+
+**`See`**
+
+https://github.com/lukso-network/LIPs/blob/main/LSPs/LSP-3-Profile-Metadata.md
+
+**`Example`**
+
+```ts
+setProfileMetadata(
+  "0x..."
+  {
+    LSP3Profile: {
+      "name": "Tom",
+      "description": "Some random description about Tom"
+    }
+  },
+  "https://google.com/",
+  signer
+)
+```
+
+#### Defined in
+
+[LSP3ProfileMetadata/setProfileMetadata/setProfileMetadata.ts:38](https://github.com/lukso-network/lsp-utils/blob/b49578e/src/LSP3ProfileMetadata/setProfileMetadata/setProfileMetadata.ts#L38)
