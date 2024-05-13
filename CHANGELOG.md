@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.2.0](https://github.com/lukso-network/lsp-utils/compare/v0.1.0...v0.2.0) (2024-05-13)
+
+
+### Features
+
+* add functions to generate metdata ([a6be2e0](https://github.com/lukso-network/lsp-utils/commit/a6be2e0453cf28ded5c570b5c476bbad9d8e67b6))
+* add support for latest versions, plus VerifiarbleURI support ([cefd4fa](https://github.com/lukso-network/lsp-utils/commit/cefd4fa54fb17f94334306222a9421c57e0ab297))
+* use isAddress for address check ([1c3e95d](https://github.com/lukso-network/lsp-utils/commit/1c3e95d082094bcd53f0e7b331edd142c508b7dd))
+
+
+### Bug Fixes
+
+* encoding `AllowedERC725YDataKeys` ([9bae3c7](https://github.com/lukso-network/lsp-utils/commit/9bae3c7f6525154fef43d835326188e7628a77e7))
+* incorrect checks ([1c3e95d](https://github.com/lukso-network/lsp-utils/commit/1c3e95d082094bcd53f0e7b331edd142c508b7dd))
+* remove neg sign ([1c3e95d](https://github.com/lukso-network/lsp-utils/commit/1c3e95d082094bcd53f0e7b331edd142c508b7dd))
+
 ## [0.1.0](https://github.com/lukso-network/lsp-utils/compare/lsp-utils-v0.0.2...lsp-utils-v0.1.0) (2024-02-06)
 
 
