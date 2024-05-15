@@ -33,4 +33,4 @@ validateIpfsUrl('') => ''
 
 #### Defined in
 
-[IPFS/validateIpfsUrl/validateIpfsUrl.ts:17](https://github.com/lukso-network/lsp-utils/blob/b49578e/src/IPFS/validateIpfsUrl/validateIpfsUrl.ts#L17)
+[IPFS/validateIpfsUrl/validateIpfsUrl.ts:17](https://github.com/lukso-network/lsp-utils/blob/309c96ce8e1c657ee24b38cdd9cd4a8faba83bcf/src/IPFS/validateIpfsUrl/validateIpfsUrl.ts#L17)

@@ -36,7 +36,7 @@ https://github.com/lukso-network/LIPs/blob/main/LSPs/LSP-4-DigitalAsset-Metadata
 
 #### Defined in
 
-[LSP4DigitalAssetMetadata/addDigitalAssetCreators/addDigitalAssetCreators.ts:30](https://github.com/lukso-network/lsp-utils/blob/b49578e/src/LSP4DigitalAssetMetadata/addDigitalAssetCreators/addDigitalAssetCreators.ts#L30)
+[LSP4DigitalAssetMetadata/addDigitalAssetCreators/addDigitalAssetCreators.ts:30](https://github.com/lukso-network/lsp-utils/blob/309c96ce8e1c657ee24b38cdd9cd4a8faba83bcf/src/LSP4DigitalAssetMetadata/addDigitalAssetCreators/addDigitalAssetCreators.ts#L30)
 
 ---
 
@@ -73,7 +73,7 @@ https://github.com/lukso-network/LIPs/blob/main/LSPs/LSP-4-DigitalAsset-Metadata
 
 #### Defined in
 
-[LSP4DigitalAssetMetadata/authenticateDigitalAssetCreators/authenticateDigitalAssetCreators.ts:27](https://github.com/lukso-network/lsp-utils/blob/b49578e/src/LSP4DigitalAssetMetadata/authenticateDigitalAssetCreators/authenticateDigitalAssetCreators.ts#L27)
+[LSP4DigitalAssetMetadata/authenticateDigitalAssetCreators/authenticateDigitalAssetCreators.ts:27](https://github.com/lukso-network/lsp-utils/blob/309c96ce8e1c657ee24b38cdd9cd4a8faba83bcf/src/LSP4DigitalAssetMetadata/authenticateDigitalAssetCreators/authenticateDigitalAssetCreators.ts#L27)
 
 ---
 
@@ -125,7 +125,7 @@ getAssetMetadata(ERC725Y) =>
 
 #### Defined in
 
-[LSP4DigitalAssetMetadata/getAssetMetadata/getAssetMetadata.ts:45](https://github.com/lukso-network/lsp-utils/blob/b49578e/src/LSP4DigitalAssetMetadata/getAssetMetadata/getAssetMetadata.ts#L45)
+[LSP4DigitalAssetMetadata/getAssetMetadata/getAssetMetadata.ts:45](https://github.com/lukso-network/lsp-utils/blob/309c96ce8e1c657ee24b38cdd9cd4a8faba83bcf/src/LSP4DigitalAssetMetadata/getAssetMetadata/getAssetMetadata.ts#L45)
 
 ---
 
@@ -164,7 +164,7 @@ https://github.com/lukso-network/LIPs/blob/main/LSPs/LSP-4-DigitalAsset-Metadata
 
 #### Defined in
 
-[LSP4DigitalAssetMetadata/getDigitalAssetCreators/getDigitalAssetCreators.ts:33](https://github.com/lukso-network/lsp-utils/blob/b49578e/src/LSP4DigitalAssetMetadata/getDigitalAssetCreators/getDigitalAssetCreators.ts#L33)
+[LSP4DigitalAssetMetadata/getDigitalAssetCreators/getDigitalAssetCreators.ts:33](https://github.com/lukso-network/lsp-utils/blob/309c96ce8e1c657ee24b38cdd9cd4a8faba83bcf/src/LSP4DigitalAssetMetadata/getDigitalAssetCreators/getDigitalAssetCreators.ts#L33)
 
 ---
 
@@ -203,7 +203,7 @@ isAssetMetadata({ description: "", links: [], name: "", tags: [] }) => false
 
 #### Defined in
 
-[LSP4DigitalAssetMetadata/isAssetMetadata/isAssetMetadata.ts:19](https://github.com/lukso-network/lsp-utils/blob/b49578e/src/LSP4DigitalAssetMetadata/isAssetMetadata/isAssetMetadata.ts#L19)
+[LSP4DigitalAssetMetadata/isAssetMetadata/isAssetMetadata.ts:19](https://github.com/lukso-network/lsp-utils/blob/309c96ce8e1c657ee24b38cdd9cd4a8faba83bcf/src/LSP4DigitalAssetMetadata/isAssetMetadata/isAssetMetadata.ts#L19)
 
 ---
 
@@ -241,4 +241,119 @@ https://github.com/lukso-network/LIPs/blob/main/LSPs/LSP-4-DigitalAsset-Metadata
 
 #### Defined in
 
-[LSP4DigitalAssetMetadata/removeDigitalAssetCreators/removeDigitalAssetCreators.ts:27](https://github.com/lukso-network/lsp-utils/blob/b49578e/src/LSP4DigitalAssetMetadata/removeDigitalAssetCreators/removeDigitalAssetCreators.ts#L27)
+[LSP4DigitalAssetMetadata/removeDigitalAssetCreators/removeDigitalAssetCreators.ts:27](https://github.com/lukso-network/lsp-utils/blob/309c96ce8e1c657ee24b38cdd9cd4a8faba83bcf/src/LSP4DigitalAssetMetadata/removeDigitalAssetCreators/removeDigitalAssetCreators.ts#L27)
+
+## Other
+
+### generateLSP4JSON
+
+▸ **generateLSP4JSON**(`name`, `description`, `links`, `attributes`, `icons`, `images`, `assets`): `string`
+
+Generates the LSP4 metadata JSON string based on the provided parameters.
+
+#### Parameters
+
+| Name          | Type          | Description                                                      |
+| :------------ | :------------ | :--------------------------------------------------------------- |
+| `name`        | `string`      | The name of the LSP4 metadata.                                   |
+| `description` | `string`      | The description of the LSP4 metadata.                            |
+| `links`       | `Link`[]      | An array of link objects.                                        |
+| `attributes`  | `Attribute`[] | An array of attribute objects.                                   |
+| `icons`       | `Icons`       | An icons object containing image, LSP7, and LSP8 asset objects.  |
+| `images`      | `Images`      | An images object containing group image field objects.           |
+| `assets`      | `Assets`      | An assets object containing asset, LSP7, and LSP8 asset objects. |
+
+#### Returns
+
+`string`
+
+The LSP4 metadata JSON string.
+
+**`Function`**
+
+toLSP4MetadataJSON
+
+#### Defined in
+
+[LSP4DigitalAssetMetadata/generateLSP4JSON/generateLSP4JSON.ts:15](https://github.com/lukso-network/lsp-utils/blob/309c96ce8e1c657ee24b38cdd9cd4a8faba83bcf/src/LSP4DigitalAssetMetadata/generateLSP4JSON/generateLSP4JSON.ts#L15)
+
+---
+
+### generateLSP4JSONVerifiableURI
+
+▸ **generateLSP4JSONVerifiableURI**(`name`, `description`, `links`, `attributes`, `icons`, `images`, `assets`): `string`
+
+Generates the LSP4 metadata JSON string based on the provided parameters.
+
+#### Parameters
+
+| Name          | Type          | Description                                                      |
+| :------------ | :------------ | :--------------------------------------------------------------- |
+| `name`        | `string`      | The name of the LSP4 metadata.                                   |
+| `description` | `string`      | The description of the LSP4 metadata.                            |
+| `links`       | `Link`[]      | An array of link objects.                                        |
+| `attributes`  | `Attribute`[] | An array of attribute objects.                                   |
+| `icons`       | `Icons`       | An icons object containing image, LSP7, and LSP8 asset objects.  |
+| `images`      | `Images`      | An images object containing group image field objects.           |
+| `assets`      | `Assets`      | An assets object containing asset, LSP7, and LSP8 asset objects. |
+
+#### Returns
+
+`string`
+
+The LSP4 metadata JSON string.
+
+-
+
+The hash of the LSP4 metadata JSON string.
+
+**`Function`**
+
+generateLSP4JSONVerifiableURI
+
+#### Defined in
+
+[LSP4DigitalAssetMetadata/generateLSP4JSONVerifiableURI/generateLSP4JSONVerifiableURI.ts:23](https://github.com/lukso-network/lsp-utils/blob/309c96ce8e1c657ee24b38cdd9cd4a8faba83bcf/src/LSP4DigitalAssetMetadata/generateLSP4JSONVerifiableURI/generateLSP4JSONVerifiableURI.ts#L23)
+
+---
+
+### generateLSP4JSONWithHash
+
+▸ **generateLSP4JSONWithHash**(`name`, `description`, `links`, `attributes`, `icons`, `images`, `assets`): `Object`
+
+Generates the LSP4 metadata JSON string based on the provided parameters.
+
+#### Parameters
+
+| Name          | Type          | Description                                                      |
+| :------------ | :------------ | :--------------------------------------------------------------- |
+| `name`        | `string`      | The name of the LSP4 metadata.                                   |
+| `description` | `string`      | The description of the LSP4 metadata.                            |
+| `links`       | `Link`[]      | An array of link objects.                                        |
+| `attributes`  | `Attribute`[] | An array of attribute objects.                                   |
+| `icons`       | `Icons`       | An icons object containing image, LSP7, and LSP8 asset objects.  |
+| `images`      | `Images`      | An images object containing group image field objects.           |
+| `assets`      | `Assets`      | An assets object containing asset, LSP7, and LSP8 asset objects. |
+
+#### Returns
+
+`Object`
+
+The LSP4 metadata JSON string.
+
+-
+
+The hash of the LSP4 metadata JSON string.
+
+| Name   | Type     |
+| :----- | :------- |
+| `hash` | `string` |
+| `json` | `string` |
+
+**`Function`**
+
+generateLSP4JSONWithHash
+
+#### Defined in
+
+[LSP4DigitalAssetMetadata/generateLSP4JSONWithHash/generateLSP4JSONWithHash.ts:23](https://github.com/lukso-network/lsp-utils/blob/309c96ce8e1c657ee24b38cdd9cd4a8faba83bcf/src/LSP4DigitalAssetMetadata/generateLSP4JSONWithHash/generateLSP4JSONWithHash.ts#L23)
