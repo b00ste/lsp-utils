@@ -37,7 +37,7 @@ You can use the utils by importing them as follow:
 #### ES6 Modules:
 
 ```javascript
-import { encodeAllowedCalls } from '@lukso/lsp-utils/dist/lib/es6';
+import { encodeAllowedCalls } from '@lukso/lsp-utils';
 
 const allowedCalls = encodeAllowedCalls(
     allowedInteractions,
@@ -50,7 +50,7 @@ const allowedCalls = encodeAllowedCalls(
 #### CommonJS
 
 ```javascript
-cosnt { encodeAllowedCalls } = require('@lukso/lsp-utils/dist/lib/es5');
+cosnt { encodeAllowedCalls } = require('@lukso/lsp-utils');
 
 const allowedCalls = encodeAllowedCalls(
     allowedInteractions,

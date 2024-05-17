@@ -12,7 +12,7 @@ Generate an array of Data Key/Value pairs to be set on the receiver address afte
 
 | Name               | Type               | Description                                                             |
 | :----------------- | :----------------- | :---------------------------------------------------------------------- |
-| `erc725YContract`  | `UniversalProfile` | The contract instance of the asset reciever.                            |
+| `erc725YContract`  | `UniversalProfile` | The contract instance of the asset receiver.                            |
 | `assetAddress`     | `BytesLike`        | The address of the asset being received (_e.g: an LSP7 or LSP8 token_). |
 | `assetInterfaceId` | `BytesLike`        | The interfaceID of the asset being received.                            |
 
@@ -38,7 +38,7 @@ generateReceivedAssetKeys(...) => { lsp5DataKeys: BytesLike[], lsp5DataValues: B
 
 #### Defined in
 
-[LSP5ReceivedAssets/generateReceivedAssetKeys/generateReceivedAssetKeys.ts:32](https://github.com/lukso-network/lsp-utils/blob/b49578e/src/LSP5ReceivedAssets/generateReceivedAssetKeys/generateReceivedAssetKeys.ts#L32)
+[LSP5ReceivedAssets/generateReceivedAssetKeys/generateReceivedAssetKeys.ts:34](https://github.com/lukso-network/lsp-utils/blob/309c96ce8e1c657ee24b38cdd9cd4a8faba83bcf/src/LSP5ReceivedAssets/generateReceivedAssetKeys/generateReceivedAssetKeys.ts#L34)
 
 ---
 
@@ -77,4 +77,4 @@ generateSentAssetKeys(...) => { lsp5DataKeys: BytesLike[], lsp5DataValues: Bytes
 
 #### Defined in
 
-[LSP5ReceivedAssets/generateSentAssetKeys/generateSentAssetKeys.ts:34](https://github.com/lukso-network/lsp-utils/blob/b49578e/src/LSP5ReceivedAssets/generateSentAssetKeys/generateSentAssetKeys.ts#L34)
+[LSP5ReceivedAssets/generateSentAssetKeys/generateSentAssetKeys.ts:34](https://github.com/lukso-network/lsp-utils/blob/309c96ce8e1c657ee24b38cdd9cd4a8faba83bcf/src/LSP5ReceivedAssets/generateSentAssetKeys/generateSentAssetKeys.ts#L34)

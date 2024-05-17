@@ -51,7 +51,7 @@ getProfileMetadata(ERC725Y) =>
 
 #### Defined in
 
-[LSP3ProfileMetadata/getProfileMetadata/getProfileMetadata.ts:53](https://github.com/lukso-network/lsp-utils/blob/b49578e/src/LSP3ProfileMetadata/getProfileMetadata/getProfileMetadata.ts#L53)
+[LSP3ProfileMetadata/getProfileMetadata/getProfileMetadata.ts:53](https://github.com/lukso-network/lsp-utils/blob/309c96ce8e1c657ee24b38cdd9cd4a8faba83bcf/src/LSP3ProfileMetadata/getProfileMetadata/getProfileMetadata.ts#L53)
 
 ---
 
@@ -88,7 +88,7 @@ isProfileMetadata({ description: "", links: [], name: "", tags: [] }) => false
 
 #### Defined in
 
-[LSP3ProfileMetadata/isProfileMetadata/isProfileMetadata.ts:16](https://github.com/lukso-network/lsp-utils/blob/b49578e/src/LSP3ProfileMetadata/isProfileMetadata/isProfileMetadata.ts#L16)
+[LSP3ProfileMetadata/isProfileMetadata/isProfileMetadata.ts:16](https://github.com/lukso-network/lsp-utils/blob/309c96ce8e1c657ee24b38cdd9cd4a8faba83bcf/src/LSP3ProfileMetadata/isProfileMetadata/isProfileMetadata.ts#L16)
 
 ---
 
@@ -133,4 +133,4 @@ setProfileMetadata(
 
 #### Defined in
 
-[LSP3ProfileMetadata/setProfileMetadata/setProfileMetadata.ts:38](https://github.com/lukso-network/lsp-utils/blob/b49578e/src/LSP3ProfileMetadata/setProfileMetadata/setProfileMetadata.ts#L38)
+[LSP3ProfileMetadata/setProfileMetadata/setProfileMetadata.ts:38](https://github.com/lukso-network/lsp-utils/blob/309c96ce8e1c657ee24b38cdd9cd4a8faba83bcf/src/LSP3ProfileMetadata/setProfileMetadata/setProfileMetadata.ts#L38)
